@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
+      <!-- <ul class="ul">
+        <router-link to="/cont" tag="li" class="li">宠物</router-link>
+        <router-link to="/pet" tag="li" class="li">宠物详情</router-link>
+      </ul> -->
     <router-view/>
   </div>
 </template>
@@ -19,7 +19,6 @@
 
 #nav {
   padding: 30px;
-
   a {
     font-weight: bold;
     color: #2c3e50;
@@ -29,4 +28,6 @@
     }
   }
 }
+.ul{position: absolute;top: 0; color: rgb(82, 72, 60); background-color: rgb(158, 126, 86); height: 30px; width: 50%; margin: 0;padding: 0;list-style: none;display: flex; justify-content: space-between;}
+.ul .li{cursor: pointer;text-align: center; height: 30px;font-size: 15px; line-height: 30px; font-weight: bold;}
 </style>
