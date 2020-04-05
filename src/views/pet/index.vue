@@ -13,7 +13,15 @@
             <!-- v-if="flagch" -->
             <div class="message" v-if="flagch">
                 <div class="c">
-                    {{ch}}
+                    <div class="ful">姓名:小黑</div>
+                    <div class="ful">性别:公</div>
+                    <div class="ful">爱好:吃东西</div>
+                    <div class="ful">讨厌:不吃东西</div>
+                    <div class="ful">身高:130px</div>
+                    <div class="ful">体积:130px * 130px</div>
+                    <div class="ful">说明:及其常见的双瞳宠物，全身呈现黑色，带有黄金牙套。</div>
+                    <div class="ful">饥饿值:{{full}}</div>
+                    <div class="ful">状态 :   <span :class="{red:full < 2}">{{full | ful}}</span></div>
                 </div>
                 <div @click="flagch = !flagch" class="x">
                     <div>X</div>
@@ -652,6 +660,7 @@
 .x{width: 100%;height: 50px;position: absolute;bottom: 20px;right: 0;}
 .x div{cursor: pointer;background-color: #121b2b; height: 50px;width: 50px; border-radius: 50%;font-size: 30px;font-weight: bold;line-height: 50px; margin: auto; color: white;opacity: 0.8;text-align: center;}
 .c{width: 100%;text-align: center;}
+.c div{text-align: center !important;line-height: 30px;margin-top: 20px;}
 .fadem-enter-active {
 transition: all .5s ease;
 }
